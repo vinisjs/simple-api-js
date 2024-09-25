@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAAS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    input,
+    button {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .results {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>My Website</h1>
+
+    <div>
+      <h2>Account</h2>
+
+      <!-- Formulário para criar conta -->
+      <form id="createAccountForm">
+        <h3>Create Account</h3>
+        <input type="text" id="createAccountName" placeholder="Account Name" required />
+        <input type="email" id="createAccountEmail" placeholder="Account Email" required />
+        <button type="submit">Create Account</button>
+      </form>
+
+      <!-- Formulário para atualizar conta -->
+      <form id="updateAccountForm">
+        <h3>Update Account</h3>
+        <input type="text" id="updateAccountId" placeholder="Account ID" required />
+        <input type="text" id="updateAccountName" placeholder="New Account Name" />
+        <input type="email" id="updateAccountEmail" placeholder="New Account Email" />
+        <button type="submit">Update Account</button>
+      </form>
+
+      <!-- Formulário para excluir conta -->
+      <form id="deleteAccountForm">
+        <h3>Delete Account</h3>
+        <input type="text" id="deleteAccountId" placeholder="Account ID" required />
+        <button type="submit">Delete Account</button>
+      </form>
+
+      <!-- Botão para obter todas as contas -->
+      <button id="getAllAccountsButton">Get All Accounts</button>
+
+      <!-- Área para exibir resultados -->
+      <div class="results" id="results"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </div>
+</body>
+
+</html>
